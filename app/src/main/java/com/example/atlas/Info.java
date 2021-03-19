@@ -8,14 +8,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Contacts extends AppCompatActivity {
+public class Info extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contacts);
+        setContentView(R.layout.activity_info);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -36,5 +35,15 @@ public class Contacts extends AppCompatActivity {
             startActivity(contacts);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void prev(View view) {
+        //TODO
+        // Switch Images and text
+    }
+
+    public void next(View view) {
+        //TODO
+        // Switch Images and text
     }
 }

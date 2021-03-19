@@ -13,7 +13,80 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static int[] pictures = {R.drawable.forest1, R.drawable.forest2, R.drawable.forest3};
+    private final static int[] pictures = {R.drawable.barvinok,
+            R.drawable.beresklet,
+            R.drawable.bereza,
+            R.drawable.bereza2,
+            R.drawable.bereza3,
+            R.drawable.boyaryshnik,
+            R.drawable.brunnera,
+            R.drawable.budra,
+            R.drawable.buzina,
+            R.drawable.buzina2,
+            R.drawable.chernogolovka,
+            R.drawable.chistotel,
+            R.drawable.chubushnik,
+            R.drawable.deren,
+            R.drawable.deren2,
+            R.drawable.deren3,
+            R.drawable.dub,
+            R.drawable.dub2,
+            R.drawable.geran,
+            R.drawable.geran2,
+            R.drawable.goryanka,
+            R.drawable.gravilat,
+            R.drawable.hohlatka,
+            R.drawable.hohlatka2,
+            R.drawable.irga,
+            R.drawable.kalina,
+            R.drawable.kalina2,
+            R.drawable.kalina3,
+            R.drawable.klen,
+            R.drawable.klen2,
+            R.drawable.klen3,
+            R.drawable.klen4,
+            R.drawable.kolokolchik,
+            R.drawable.krushina,
+            R.drawable.kupena,
+            R.drawable.landysh,
+            R.drawable.leshina,
+            R.drawable.lipa,
+            R.drawable.lipa2,
+            R.drawable.lutik,
+            R.drawable.medunica,
+            R.drawable.medunica2,
+            R.drawable.osoka,
+            R.drawable.osoka2,
+            R.drawable.ozhika,
+            R.drawable.pachysandra,
+            R.drawable.paporotnik,
+            R.drawable.perlovnik,
+            R.drawable.perlovnik,
+            R.drawable.pervocvet,
+            R.drawable.pictureofme,
+            R.drawable.pihta,
+            R.drawable.puzyr,
+            R.drawable.puzyr2,
+            R.drawable.ryabina,
+            R.drawable.skotnikova,
+            R.drawable.snezhnoyagodnik,
+            R.drawable.snytpestraya,
+            R.drawable.sosna,
+            R.drawable.spyreya,
+            R.drawable.spyreya2,
+            R.drawable.sytnykovie,
+            R.drawable.vetrenica,
+            R.drawable.vetrenica2,
+            R.drawable.volzhankna,
+            R.drawable.yasnotka,
+            R.drawable.yasnotka2,
+            R.drawable.zelenchuk,
+            R.drawable.zemlyanika,
+            R.drawable.zhimolost,
+            R.drawable.zhimolost2,
+            R.drawable.zhivuchka,
+            R.drawable.zlaki
+    };
 
     Button button;
     ImageButton imageButton;
@@ -54,10 +127,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void point(View view) {
-
+        Intent info = new Intent(this, Info.class);
+        startActivity(info);
     }
 
-    public void next(View view) {
+    private void next(View view) {
         picIndex++;
         picIndex = picIndex % (pictures.length);
         imageButton.setImageResource(pictures[picIndex]);
