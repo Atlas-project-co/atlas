@@ -13,7 +13,8 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final static int[] pictures = {R.drawable.barvinok,
+    private final static int[] pictures = {R.drawable.mainpic2,
+            R.drawable.barvinok,
             R.drawable.beresklet,
             R.drawable.bereza,
             R.drawable.bereza2,
@@ -131,13 +132,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(info);
     }
 
-    private void next(View view) {
+
+    public void next(View view) {
         picIndex++;
         picIndex = picIndex % (pictures.length);
         imageButton.setImageResource(pictures[picIndex]);
     }
-
-
-
-
 }
